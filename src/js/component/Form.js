@@ -3,8 +3,8 @@ import React from "react";
 
 const Form = ({ setInputText, setTodos, todos, inputText,setStatus }) => {
   const inputTextHandler = (e) => {
-    console.log(e.target.value);
     setInputText(e.target.value);
+    console.log(inputText);
   };
   const submitTodoHandler = (e) => {
     e.preventDefault();

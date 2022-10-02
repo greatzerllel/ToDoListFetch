@@ -7,7 +7,9 @@ import TodoList from "./component/TodoList";
 const Home = () => {
   const [inputText, setInputText] = useState("");
   const [todos, setTodos] = useState([]);
-  const [status, setStatus] = useState("");
+  const status='';
+
+  
 
   return (
     <>
@@ -22,7 +24,7 @@ const Home = () => {
           todos={todos}
           
         />
-        {todos=='' ? <DefaultMessage status={status} />:<TodoList setTodos={setTodos} todos={todos} setStatus={setStatus} />}
+        {todos=='' ? <DefaultMessage status={status} />:<TodoList setTodos={setTodos} todos={todos}  />}
         
         
       </div>

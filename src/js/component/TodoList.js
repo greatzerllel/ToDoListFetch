@@ -1,8 +1,10 @@
 import React from "react";
 import Todo from "./Todo";
 
-const TodoList = ({ todos, setTodos, setStatus }) => {
-  
+const TodoList = ({ todos, setTodos }) => {
+  const deleteAllHandler = () => {
+    setTodos("");
+  };
   return (
     <>
       <div className="todo-container">
@@ -17,6 +19,13 @@ const TodoList = ({ todos, setTodos, setStatus }) => {
             />
           ))}
         </ul>
+      </div>
+      <div>
+        <header>
+          <button onClick={deleteAllHandler} className="trash-btn">
+            <i className="fa-solid fa-ban"></i>
+          </button>
+        </header>
       </div>
     </>
   );
