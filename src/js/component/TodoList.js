@@ -30,9 +30,9 @@ const TodoList = ({ todos, setTodos }) => {
     <>
       <div className="todo-container">
         <ul className="todo-list">
-          {todos.map((todo) => (
+          {todos.map((todo,index) => (
             <Todo
-              key={todo.id}
+              key={index}
               text={todo.label}
               todos={todos}
               todo={todo}

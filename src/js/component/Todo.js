@@ -2,8 +2,31 @@ import React from "react";
 
 const Todo = ({ text, todo, todos, setTodos }) => {
   const deleteHandler = () => {
-    setTodos(todos.filter((el) => el.id !== todo.id));
-    
+    const deletedTodos = (todos.filter((el) => el.id !== todo.id));
+    fetch(
+      "https://assets.breatheco.de/apis/fake/todos/user/pruebanumero117",
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(deletedTodos),
+      }
+    )
+      .then((resp) => {
+        console.log(resp.ok); // Será true (verdad) si la respuesta es exitosa.
+        console.log(resp.status); // el código de estado = 200 o código = 400 etc.
+        
+        return resp.json(); // (regresa una promesa) will try to parse the result as json as return a promise that you can .then for results
+      })
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+      setTodos(deletedTodos)
+      console.log(deletedTodos)
   };
   const completeHandler = () => {
     setTodos(
