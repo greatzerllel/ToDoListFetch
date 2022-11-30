@@ -4,43 +4,50 @@
     box-sizing: border-box;
   }
   li{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   .hidden{
     visibility: hidden;
   }
   body {
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-image: linear-gradient(120deg, #302e29 0%, #000000 100%);
     color: white;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
   }
   header {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   
   header,
   form {
-    min-height: 20vh;
+    min-height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  form input,
+  form input {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: rgb(247, 247, 247);
+    border-radius: 4px 0 0 4px;
+  }
   form button {
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
-    background: white;
+    background: rgb(247, 247, 247)!important;
+    border-radius: 0 4px 4px 0;
   }
   form button {
-    color: #ff6f47;
+    color: #5a5a5a;
     background: #f7fffe;
     cursor: pointer;
     transition: all 0.3s ease;
   }
   form button:hover {
-    background: #ff6f47;
+    background: #b1b1b1;
     color: white;
   }
   .todo-container {
@@ -56,9 +63,9 @@
   
   .todo {
     margin: 0.5rem;
-    background: white;
-    font-size: 1.5rem;
-    color: black;
+    border-bottom: 1px solid #dad9d9;
+    font-size: 1.8rem;
+    color: rgb(211, 211, 211);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,7 +80,7 @@
   
   .trash-btn,
   .complete-btn {
-    background: #ff6f47;
+    background: #696969;
     color: white;
     border: none;
     padding: 1rem;
@@ -81,7 +88,7 @@
     font-size: 1rem;
   }
   .complete-btn {
-    background: rgb(11, 212, 162);
+    background: rgb(141, 141, 141);
   }
   .todo-item {
     padding: 0rem 0.5rem;
@@ -121,7 +128,7 @@
     overflow: hidden;
   }
   select {
-    color: #ff6f47;
+    color: #8f8f8f;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
     width: 12rem;
@@ -133,18 +140,8 @@
     top: 0;
     right: 0;
     padding: 1rem;
-    background: #ff6f47;
+    background: #cccccc;
     cursor: pointer;
     pointer-events: none;
   }
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
