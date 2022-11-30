@@ -3,7 +3,7 @@ import React from "react";
 function DefaultMessage({status}) {
   return (
     <header>
-      <div className={status}>No tasks add tasks</div>
+      <div className={status}>NO HAY TAREAS, AGREGA UNA</div>
     </header>
   );
 }

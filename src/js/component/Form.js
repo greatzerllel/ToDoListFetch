@@ -16,7 +16,7 @@ const Form = ({ setInputText, setTodos, todos, inputText }) => {
       ]
       setTodos(newTodos);
       fetch(
-        "https://assets.breatheco.de/apis/fake/todos/user/pruebanumero117",
+        "https://assets.breatheco.de/apis/fake/todos/user/beto",
         {
           method: "PUT",
           headers: {
@@ -45,7 +45,7 @@ const Form = ({ setInputText, setTodos, todos, inputText }) => {
     <>
       <form>
         <input
-          placeholder="What's need to be done?"
+          placeholder="Agregar tarea"
           value={inputText}
           onChange={inputTextHandler}
           type="text"

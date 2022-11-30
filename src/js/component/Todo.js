@@ -4,7 +4,7 @@ const Todo = ({ text, todo, todos, setTodos }) => {
   const deleteHandler = () => {
     const deletedTodos = (todos.filter((el) => el.id !== todo.id));
     fetch(
-      "https://assets.breatheco.de/apis/fake/todos/user/pruebanumero117",
+      "https://assets.breatheco.de/apis/fake/todos/user/beto",
       {
         method: "PUT",
         headers: {

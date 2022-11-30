@@ -4,7 +4,7 @@ import Todo from "./Todo";
 const TodoList = ({ todos, setTodos }) => {
   const deleteAllHandler = () => {
     setTodos("");
-    fetch('https://assets.breatheco.de/apis/fake/todos/user/pruebanumero117', {
+    fetch('https://assets.breatheco.de/apis/fake/todos/user/beto', {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json"

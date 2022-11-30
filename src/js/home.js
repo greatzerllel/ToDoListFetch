@@ -14,7 +14,7 @@ const Home = () => {
   }, []);
 
   const createUser = () => {
-    fetch("https://assets.breatheco.de/apis/fake/todos/user/pruebanumero117", {
+    fetch("https://assets.breatheco.de/apis/fake/todos/user/beto", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -38,7 +38,7 @@ const Home = () => {
   };
 
   const getUser = () => {
-    fetch("https://assets.breatheco.de/apis/fake/todos/user/pruebanumero117", {
+    fetch("https://assets.breatheco.de/apis/fake/todos/user/beto", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
